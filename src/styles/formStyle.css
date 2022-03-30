@@ -1,0 +1,27 @@
+.form {
+  padding-bottom: 20px;
+  border-bottom: solid 2px #b911f3;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.form-control {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 50px;
+  padding-bottom: 25px;
+}
+.form-control .formInput {
+  width: 50%;
+  padding: 4px;
+  border: solid 2px black;
+  border-radius: 12px;
+}
+.form .myButton {
+  width: 100px;
+  margin: 0 auto;
+}
+.pokemonImg {
+  width: auto;
+  height: 64px;
+}
