@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "first task",
+      "pokemon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "status": false
+    },
+    {
+      "id": 2,
+      "name": "second task",
+      "pokemon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+      "status": false
+    },
+    {
+      "id": 3,
+      "name": "third task",
+      "pokemon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
+      "status": false
+    }
+  ]
+}
