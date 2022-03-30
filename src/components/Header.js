@@ -1,10 +1,11 @@
 import React from 'react'
+import Button from './Button'
 
-const Header = () => {
+const Header = ({name, color}) => {
   return (
-    <div className='Header'><h1>Pokemon To Do List</h1>
-    <button></button>
-    </div>
+    <header className='Header'><h1>Pokemon To Do List</h1>
+    <Button name={name} color={color} />
+    </header>
   )
 }
 
