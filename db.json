@@ -1,21 +1,24 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "name": "first task",
-      "pokemon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
-      "status": false
-    },
-    {
-      "id": 2,
-      "name": "second task",
-      "pokemon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
-      "status": false
+      "id": 0,
+      "taskName": "first task",
+      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+      "pokemonAlt": "charmeleon",
+      "status": true
     },
     {
       "id": 3,
-      "name": "third task",
-      "pokemon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
+      "taskName": "third task",
+      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
+      "pokemonAlt": "metapod",
+      "status": false
+    },
+    {
+      "id": 4,
+      "taskName": "fourth task",
+      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
+      "pokemonAlt": "beedrill",
       "status": false
     }
   ]

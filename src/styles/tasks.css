@@ -1,5 +1,54 @@
 .task {
   border: solid 2px black;
-  margin: 0 15px;
-  height: 20px;
+  margin: 10px 15px 0 15px;
+  height: 71px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+#imgs {
+  position: relative;
+  height: 200px;
+  width: 81px;
+}
+#X {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  height: 50px;
+  width: auto;
+  display: none;
+  color: red;
+  cursor: pointer;
+}
+
+#pokemonImg {
+  position: absolute;
+  top: -17px;
+  right: -7px;
+  height: 100px;
+  width: auto;
+  display: block;
+}
+
+#imgs:hover > #X {
+  display: block;
+}
+
+#checkboxLabel {
+  padding: 23px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+#checkboxLabel label {
+  font-size: 20px;
+  padding-left: 21px;
+}
+#checkboxLabel input {
+  -ms-transform: scale(1.4); /* IE */
+  -moz-transform: scale(1.4); /* FF */
+  -webkit-transform: scale(1.4); /* Safari and Chrome */
+  -o-transform: scale(1.4); /* Opera */
+  transform: scale(1.4);
 }
