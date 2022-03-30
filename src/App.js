@@ -3,13 +3,9 @@ import Button from "./components/Button.js";
 import Form from "./components/Form";
 
 function App() {
-  const red = {
-    backgroundColor: "red",
-  };
+  const red = {backgroundColor: "#E3261A"};
+  const green = {backgroundColor: "#1AE32E"};
 
-  const green = {
-    backgroundColor: "green",
-  };
 
   return (
     <div className="App">
@@ -17,7 +13,7 @@ function App() {
 
       <h2>Button test</h2>
       <Button name="Add task" color={green} />
-      <Button name="Done" color={red} />
+      <Button name="Done" color={red}  />
     </div>
   );
 }

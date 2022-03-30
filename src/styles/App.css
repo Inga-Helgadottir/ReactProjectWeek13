@@ -37,6 +37,11 @@
   }
 }
 
-/* .myButton {
-
-} */
+.myButton {
+  width: 166px;
+  height: 68px;
+  top: 221px;
+  left: 413px;
+  radius: 26px;
+  border-radius: 26px;
+}
