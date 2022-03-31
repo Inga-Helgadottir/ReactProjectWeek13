@@ -80,12 +80,12 @@ function App() {
       console.log('This will either bring for or hide the "form"');
     };
   };
-
+  
   return (
     <div className="App">
-      <Form onAdd={addTask} />
-      <Header name="Add task" color={green} onAdd={() => setShowAddTask(!showAddTask)}
+      <Header onAdd={() => setShowAddTask(!showAddTask)}
       showAdd={showAddTask}/>
+      {showAddTask && <Form onAdd={addTask} />}
       <Tasks
         tasks={tasks}
         onDelete={deleteTask}

@@ -1,15 +1,15 @@
 import React from "react";
 import Proptypes from 'prop-types';
 
-const button = ({ name, color, onAdd }) => {
+const Button = ({ name, color, onClick }) => {
 
   /* const onClick = () => {
     console.log('This should add a task') //TODO:
   } */
 
   return (
-    <button onClick={onAdd}
-    style={color} 
+    <button onClick={onClick}
+    style={{backgroundColor: color}} 
     className="myButton">
       {name}
     </button>
@@ -18,4 +18,4 @@ const button = ({ name, color, onAdd }) => {
 };
 
 
-export default button;
+export default Button;
