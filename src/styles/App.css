@@ -15,11 +15,9 @@ header {
 .myButton {
   width: 166px;
   height: 68px;
-  top: 221px;
-  left: 413px;
   border-radius: 20px;
   font-size: 26px;
-  font-weight: 700, bold;
+  font-weight: bold;
   text-align: center;
   border: solid 2px #000;
 }
