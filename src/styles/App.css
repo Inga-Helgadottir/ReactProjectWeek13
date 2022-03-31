@@ -50,4 +50,5 @@ header {
   font-size: 26px;
   font-weight: 700, bold;
   text-align: center;
+  border: solid 2px #000;
 }

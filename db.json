@@ -27,6 +27,13 @@
       "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/204.png",
       "status": false,
       "id": 6
+    },
+    {
+      "taskName": "yayyyyyyy",
+      "pokemonAlt": "dunsparce",
+      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/206.png",
+      "status": false,
+      "id": 7
     }
   ],
   "pokemons": [
