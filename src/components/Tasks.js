@@ -4,11 +4,11 @@ import PropTypes from "prop-types";
 const Tasks = ({ tasks, onDelete, toggleChecked }) => {
   return (
     <div>
-      {tasks.map((task, index) => {
+      {tasks.map((task) => {
         return (
           <Task
-            key={index}
-            id={index}
+            key={task.id}
+            id={task.id}
             taskName={task.taskName}
             pokemonSrc={task.pokemonSrc}
             pokemonAlt={task.pokemonAlt}
@@ -22,8 +22,8 @@ const Tasks = ({ tasks, onDelete, toggleChecked }) => {
   );
 };
 
+export default Tasks;
+
 Tasks.propTypes = {
   tasks: PropTypes.array.isRequired,
 };
-
-export default Tasks;

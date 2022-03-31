@@ -1,6 +1,6 @@
 import "./styles/App.css";
 import Button from "./components/Button";
-// import Form from "./components/Form";
+import Form from "./components/Form";
 import Tasks from "./components/Tasks";
 import { useState, useEffect } from "react";
 
@@ -14,10 +14,28 @@ function App() {
     };
     getTasks();
   }, []);
+
   // background colors for buttons
   const red = { backgroundColor: "#E3261A" };
   const green = { backgroundColor: "#1AE32E" };
+
   // fetch
+  const addTask = async (task) => {
+    console.log("----------------------------");
+    console.log(task);
+    const res = await fetch(`http://localhost:5000/tasks`, {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify(task),
+    });
+
+    const data = await res.json();
+
+    setTasks([...tasks, data]);
+  };
+
   const fetchTasks = async () => {
     const res = await fetch("http://localhost:5000/tasks");
     const data = await res.json();
@@ -27,7 +45,6 @@ function App() {
   const fetchTask = async (id) => {
     const res = await fetch(`http://localhost:5000/tasks/${id}`);
     const data = await res.json();
-
     return data;
   };
 
@@ -40,9 +57,7 @@ function App() {
   };
 
   const toggleChecked = async (id) => {
-    console.log(id);
     const taskToToggle = await fetchTask(id);
-    console.log(taskToToggle);
     const updatedTask = { ...taskToToggle, status: !taskToToggle.status };
 
     const res = await fetch(`http://localhost:5000/tasks/${id}`, {
@@ -61,8 +76,10 @@ function App() {
       )
     );
   };
+
   return (
     <div className="App">
+      <Form onAdd={addTask} />
       <Tasks
         tasks={tasks}
         onDelete={deleteTask}

@@ -1,25 +1,84 @@
 {
   "tasks": [
     {
-      "id": 0,
-      "taskName": "first task",
-      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
-      "pokemonAlt": "charmeleon",
-      "status": true
-    },
-    {
       "id": 3,
       "taskName": "third task",
-      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
-      "pokemonAlt": "metapod",
+      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/204.png",
+      "pokemonAlt": "pineco",
       "status": false
     },
     {
       "id": 4,
       "taskName": "fourth task",
-      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
-      "pokemonAlt": "beedrill",
+      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/202.png",
+      "pokemonAlt": "wobbuffet",
       "status": false
+    },
+    {
+      "id": 5,
+      "taskName": "hjkhkljhjklklhjkhkljhkhl",
+      "pokemonAlt": "pineco",
+      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/204.png",
+      "status": false
+    },
+    {
+      "taskName": "ssssssssssssssssssssssss",
+      "pokemonAlt": "pineco",
+      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/204.png",
+      "status": false,
+      "id": 6
+    }
+  ],
+  "pokemons": [
+    {
+      "pokemonAlt": "unown",
+      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/201.png",
+      "id": 1
+    },
+    {
+      "pokemonAlt": "pineco",
+      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/204.png",
+      "id": 2
+    },
+    {
+      "pokemonAlt": "wobbuffet",
+      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/202.png",
+      "id": 3
+    },
+    {
+      "pokemonAlt": "forretress",
+      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/205.png",
+      "id": 4
+    },
+    {
+      "pokemonAlt": "gligar",
+      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/207.png",
+      "id": 5
+    },
+    {
+      "pokemonAlt": "dunsparce",
+      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/206.png",
+      "id": 6
+    },
+    {
+      "pokemonAlt": "steelix",
+      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/208.png",
+      "id": 7
+    },
+    {
+      "pokemonAlt": "girafarig",
+      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/203.png",
+      "id": 8
+    },
+    {
+      "pokemonAlt": "snubbull",
+      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/209.png",
+      "id": 9
+    },
+    {
+      "pokemonAlt": "granbull",
+      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/210.png",
+      "id": 10
     }
   ]
 }

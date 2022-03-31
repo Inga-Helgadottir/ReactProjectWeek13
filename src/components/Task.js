@@ -31,11 +31,11 @@ const Task = ({
   );
 };
 
+export default Task;
+
 Task.propTypes = {
   taskName: PropTypes.string.isRequired,
   pokemonSrc: PropTypes.string.isRequired,
   pokemonAlt: PropTypes.string.isRequired,
   status: PropTypes.bool.isRequired,
 };
-
-export default Task;
