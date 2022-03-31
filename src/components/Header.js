@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button'
 
-const Header = ({name, color}) => {
+const Header = ({name, color, onAdd}) => {
   return (
     <header className='Header'><h1>Pokemon To Do List</h1>
     <Button name={name} color={color} />
