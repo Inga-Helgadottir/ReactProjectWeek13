@@ -2,6 +2,7 @@ import "./styles/App.css";
 import Button from "./components/Button";
 // import Form from "./components/Form";
 import Tasks from "./components/Tasks";
+import Header from "./components/Header";
 import { useState, useEffect } from "react";
 
 function App() {
@@ -68,6 +69,7 @@ function App() {
   };
   return (
     <div className="App">
+      <Header name="asddsa" color={green}/>
       <Tasks
         tasks={tasks}
         onDelete={deleteTask}
@@ -75,8 +77,8 @@ function App() {
       />
 
       
-      <Button name="Add task" color={green} onClick = {onClick} /> {/* //TODO: This should bring forth the "form" - to be named "onAdd"*/}
-      <Button name="Done" color={red} onClick = {onClick} /> {/* //TODO: This should hide the "form" once again - to be named "onDone"*/}
+      {/* <Button name="Add task" color={green} onClick = {onClick} /> {/* //TODO: This should bring forth the "form" - to be named "onAdd"*/}
+      {/* <Button name="Done" color={red} onClick = {onClick} /> //TODO: This should hide the "form" once again - to be named "onDone" */}
     </div>
   );
 }

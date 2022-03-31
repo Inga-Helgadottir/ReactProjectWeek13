@@ -9,4 +9,4 @@ const Header = ({name, color}) => {
   )
 }
 
-export default function Header();
+export default Header;

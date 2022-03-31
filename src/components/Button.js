@@ -17,10 +17,5 @@ const button = ({ name, color, onClick }) => {
   );
 };
 
-button.Proptypes = {
-  text: Proptypes.string,
-  color: Proptypes.string,
-  onClick: Proptypes.func
-}
 
 export default button;
