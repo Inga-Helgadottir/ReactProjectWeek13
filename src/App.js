@@ -2,11 +2,14 @@ import "./styles/App.css";
 import Form from "./components/Form";
 import Tasks from "./components/Tasks";
 import Header from "./components/Header";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { FaSistrix } from "react-icons/fa";
 
 function App() {
   const [tasks, setTasks] = useState([]);
   const [showAddTask, setShowAddTask] = useState(false);
+  const inputRef = useRef(null);
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     const getTasks = async () => {
@@ -15,6 +18,20 @@ function App() {
     };
     getTasks();
   }, []);
+
+  //search
+  const inputTasks = (event) => {
+    const value = event.target.value;
+    setSearch(value);
+  };
+  const addTodo = () => {
+    inputRef.focus();
+  };
+
+  // const searcTodos = todos.filter((el) =>
+  const searcTasks = tasks.filter((el) =>
+    el.taskName.toLowerCase().includes(search)
+  );
 
   // fetch
   const addTask = async (task) => {
@@ -72,8 +89,18 @@ function App() {
     );
   };
 
+  const searchStyle = {
+    backgroundColor: "#b911f3",
+    borderBottom: "solid 2px black",
+    position: "relative",
+  };
+
   return (
     <div className="App">
+      <div style={searchStyle}>
+        <FaSistrix id="searchIcon" />
+        <input ref={inputRef} id="task" type="text" onChange={inputTasks} />
+      </div>
       <Header
         onAdd={() => setShowAddTask(!showAddTask)}
         showAdd={showAddTask}
@@ -81,7 +108,7 @@ function App() {
       {showAddTask && <Form onAdd={addTask} />}
       {tasks.length > 0 ? (
         <Tasks
-          tasks={tasks}
+          tasks={searcTasks}
           onDelete={deleteTask}
           toggleChecked={toggleChecked}
         />

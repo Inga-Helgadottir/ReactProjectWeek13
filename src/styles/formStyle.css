@@ -1,6 +1,6 @@
 .form {
   padding-bottom: 20px;
-  border-bottom: solid 3px #b911f3;
+  border-bottom: solid 4px #b911f3;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -39,4 +39,16 @@
 .pokemonImg {
   width: auto;
   height: 64px;
+}
+#task {
+  width: 84%;
+  margin: 5px 2px;
+  padding-left: 21px;
+  border: solid 1px #000;
+  border-radius: 15px;
+}
+#searchIcon {
+  position: absolute;
+  top: 8px;
+  left: 32px;
 }
