@@ -26,7 +26,7 @@ const Form = ({ onAdd }) => {
     const res = await fetch("http://localhost:5000/pokemons/");
     const data = await res.json();
     data.map((p) => {
-      if (p.pokemonAlt == pokemon) {
+      if (p.pokemonAlt === pokemon) {
         setPokemonAlt(p.pokemonAlt);
         setPokemonSrc(p.pokemonSrc);
       }

@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [tasks, setTasks] = useState([]);
+  const [showAddTask, setShowAddTask] = useState(false)
 
   useEffect(() => {
     const getTasks = async () => {
@@ -83,16 +84,15 @@ function App() {
   return (
     <div className="App">
       <Form onAdd={addTask} />
-      <Header name="asddsa" color={green} />
+      <Header name="Add task" color={green} onAdd={() => setShowAddTask(!showAddTask)}
+      showAdd={showAddTask}/>
       <Tasks
         tasks={tasks}
         onDelete={deleteTask}
         toggleChecked={toggleChecked}
       />
 
-      {/* <Button name="Add task" color={green} onClick = {onClick} /> {/* //TODO: This should bring forth the "form" - to be named "onAdd"*/}
-      {/* <Button name="Done" color={red} onClick = {onClick} /> //TODO: This should hide the "form" once again - to be named "onDone" */}
-    </div>
+      </div>
   );
 }
 
