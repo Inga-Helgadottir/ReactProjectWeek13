@@ -3,7 +3,7 @@
   margin: 10px 15px 0 15px;
   height: 71px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
 }
 #imgs {
@@ -51,4 +51,5 @@
   -webkit-transform: scale(1.4); /* Safari and Chrome */
   -o-transform: scale(1.4); /* Opera */
   transform: scale(1.4);
+  margin-left: 25px;
 }

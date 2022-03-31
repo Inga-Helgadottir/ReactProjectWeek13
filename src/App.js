@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [tasks, setTasks] = useState([]);
-  const [showAddTask, setShowAddTask] = useState(false)
+  const [showAddTask, setShowAddTask] = useState(false);
 
   useEffect(() => {
     const getTasks = async () => {
@@ -75,24 +75,25 @@ function App() {
         task.id === id ? { ...task, status: data.status } : task
       )
     );
-
-    const onClick = () => {
-      console.log('This will either bring for or hide the "form"');
-    };
   };
-  
+
   return (
     <div className="App">
-      <Header onAdd={() => setShowAddTask(!showAddTask)}
-      showAdd={showAddTask}/>
-      {showAddTask && <Form onAdd={addTask} />}
-      <Tasks
-        tasks={tasks}
-        onDelete={deleteTask}
-        toggleChecked={toggleChecked}
+      <Header
+        onAdd={() => setShowAddTask(!showAddTask)}
+        showAdd={showAddTask}
       />
-
-      </div>
+      {showAddTask && <Form onAdd={addTask} />}
+      {tasks.length > 0 ? (
+        <Tasks
+          tasks={tasks}
+          onDelete={deleteTask}
+          toggleChecked={toggleChecked}
+        />
+      ) : (
+        <h2>There are no tasks</h2>
+      )}
+    </div>
   );
 }
 

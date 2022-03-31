@@ -1,32 +1,25 @@
 {
   "tasks": [
     {
-      "id": 3,
-      "taskName": "third task",
-      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/204.png",
-      "pokemonAlt": "pineco",
-      "status": false
-    },
-    {
-      "id": 4,
-      "taskName": "fourth task",
-      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/202.png",
-      "pokemonAlt": "wobbuffet",
-      "status": false
-    },
-    {
-      "id": 5,
-      "taskName": "hjkhkljhjklklhjkhkljhkhl",
-      "pokemonAlt": "pineco",
-      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/204.png",
-      "status": false
-    },
-    {
-      "taskName": "ssssssssssssssssssssssss",
-      "pokemonAlt": "pineco",
-      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/204.png",
+      "taskName": "here is a task",
+      "pokemonAlt": "unown",
+      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/201.png",
       "status": false,
-      "id": 6
+      "id": 8
+    },
+    {
+      "taskName": "here is another task",
+      "pokemonAlt": "granbull",
+      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/210.png",
+      "status": false,
+      "id": 9
+    },
+    {
+      "taskName": "aaaaaaaaaaaa",
+      "pokemonAlt": "wobbuffet",
+      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/202.png",
+      "status": false,
+      "id": 10
     }
   ],
   "pokemons": [

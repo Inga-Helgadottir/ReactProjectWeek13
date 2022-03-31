@@ -5,27 +5,35 @@
   justify-content: space-between;
   flex-direction: column;
 }
+.form h2 {
+  font-size: 31px;
+}
 .form-control {
   display: flex;
   justify-content: space-between;
   margin: 0 50px;
   padding-bottom: 25px;
 }
+.form-control label,
+.form-control .formInput,
+.form-control select {
+  font-size: 18px;
+}
 .form-control .formInput {
   width: 50%;
-  padding: 4px;
+  padding: 4px 4px 4px 5px;
   border: solid 2px black;
   border-radius: 12px;
 }
 .form-control select {
-  width: 52%;
+  width: 53%;
   padding: 4px;
   border: solid 2px black;
   border-radius: 12px;
   background-color: #fff;
 }
 .form .myButton {
-  width: 100px;
+  background-color: #1ae32e;
   margin: 0 auto;
 }
 .pokemonImg {
