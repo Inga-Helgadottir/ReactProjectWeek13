@@ -82,16 +82,17 @@ function App() {
 
   return (
     <div className="App">
-      <Form onAdd={addTask} />
       <Header name="asddsa" color={green} />
-      <Tasks
-        tasks={tasks}
-        onDelete={deleteTask}
-        toggleChecked={toggleChecked}
-      />
-
-      {/* <Button name="Add task" color={green} onClick = {onClick} /> {/* //TODO: This should bring forth the "form" - to be named "onAdd"*/}
-      {/* <Button name="Done" color={red} onClick = {onClick} /> //TODO: This should hide the "form" once again - to be named "onDone" */}
+      <Form onAdd={addTask} />
+      {tasks.length > 0 ? (
+        <Tasks
+          tasks={tasks}
+          onDelete={deleteTask}
+          toggleChecked={toggleChecked}
+        />
+      ) : (
+        <h2>There are no tasks</h2>
+      )}
     </div>
   );
 }
