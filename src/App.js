@@ -2,6 +2,7 @@ import "./styles/App.css";
 import Button from "./components/Button";
 import Form from "./components/Form";
 import Tasks from "./components/Tasks";
+import Header from "./components/Header";
 import { useState, useEffect } from "react";
 
 function App() {
@@ -21,8 +22,6 @@ function App() {
 
   // fetch
   const addTask = async (task) => {
-    console.log("----------------------------");
-    console.log(task);
     const res = await fetch(`http://localhost:5000/tasks`, {
       method: "POST",
       headers: {
@@ -75,20 +74,24 @@ function App() {
         task.id === id ? { ...task, status: data.status } : task
       )
     );
+
+    const onClick = () => {
+      console.log('This will either bring for or hide the "form"');
+    };
   };
 
   return (
     <div className="App">
       <Form onAdd={addTask} />
+      <Header name="asddsa" color={green} />
       <Tasks
         tasks={tasks}
         onDelete={deleteTask}
         toggleChecked={toggleChecked}
       />
 
-      <h2>Button test</h2>
-      <Button name="Add task" color={green} />
-      <Button name="Done" color={red} />
+      {/* <Button name="Add task" color={green} onClick = {onClick} /> {/* //TODO: This should bring forth the "form" - to be named "onAdd"*/}
+      {/* <Button name="Done" color={red} onClick = {onClick} /> //TODO: This should hide the "form" once again - to be named "onDone" */}
     </div>
   );
 }

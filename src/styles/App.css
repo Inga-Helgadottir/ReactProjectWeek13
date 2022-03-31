@@ -46,6 +46,8 @@ header {
   height: 68px;
   top: 221px;
   left: 413px;
-  radius: 26px;
-  border-radius: 26px;
+  border-radius: 20px;
+  font-size: 26px;
+  font-weight: 700, bold;
+  text-align: center;
 }
