@@ -83,7 +83,7 @@ function App() {
   return (
     <div className="App">
       <Header name="asddsa" color={green} />
-      <Form onAdd={addTask} />
+      {showAddTask && <Form onAdd={addTask} />}
       {tasks.length > 0 ? (
         <Tasks
           tasks={tasks}
