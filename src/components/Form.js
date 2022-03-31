@@ -40,6 +40,10 @@ const Form = ({ onAdd }) => {
       alert("Please add a task");
       return;
     }
+    if (!pokemonAlt) {
+      alert("Please add a pokemon");
+      return;
+    }
 
     onAdd({ taskName, pokemonAlt, pokemonSrc, status });
 
@@ -65,6 +69,7 @@ const Form = ({ onAdd }) => {
       <div className="form-control">
         <label>Pokemon name</label>
         <select onChange={(e) => findPokemon(e.target.value)}>
+          <option value="0">Select a pokemon:</option>
           {pokemonOptions.map((option, index) => (
             <option key={index} value={option.pokemonAlt}>
               {option.pokemonAlt}

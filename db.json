@@ -13,13 +13,6 @@
       "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/202.png",
       "status": false,
       "id": 12
-    },
-    {
-      "taskName": "test",
-      "pokemonAlt": "",
-      "pokemonSrc": "",
-      "status": false,
-      "id": 13
     }
   ],
   "pokemons": [

@@ -78,7 +78,6 @@ function App() {
         onAdd={() => setShowAddTask(!showAddTask)}
         showAdd={showAddTask}
       />
-      {/* <Form onAdd={addTask} /> */}
       {showAddTask && <Form onAdd={addTask} />}
       {tasks.length > 0 ? (
         <Tasks
