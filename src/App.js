@@ -74,10 +74,6 @@ function App() {
         task.id === id ? { ...task, status: data.status } : task
       )
     );
-
-    const onClick = () => {
-      console.log('This will either bring for or hide the "form"');
-    };
   };
 
   return (
