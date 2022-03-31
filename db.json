@@ -1,13 +1,6 @@
 {
   "tasks": [
     {
-      "id": 0,
-      "taskName": "first task",
-      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
-      "pokemonAlt": "charmeleon",
-      "status": true
-    },
-    {
       "id": 3,
       "taskName": "third task",
       "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",

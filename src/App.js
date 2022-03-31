@@ -60,6 +60,11 @@ function App() {
         task.id === id ? { ...task, status: data.status } : task
       )
     );
+
+    const onClick = () => {
+      console.log('This will either bring for or hide the "form"')
+    }
+
   };
   return (
     <div className="App">
@@ -69,8 +74,9 @@ function App() {
         toggleChecked={toggleChecked}
       />
 
-      <Button name="Add task" color={green} />
-      <Button name="Done" color={red} />
+      
+      <Button name="Add task" color={green} onClick = {onClick} /> {/* //TODO: This should bring forth the "form" - to be named "onAdd"*/}
+      <Button name="Done" color={red} onClick = {onClick} /> {/* //TODO: This should hide the "form" once again - to be named "onDone"*/}
     </div>
   );
 }
