@@ -1,13 +1,6 @@
 {
   "tasks": [
     {
-      "taskName": "here is a task",
-      "pokemonAlt": "unown",
-      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/201.png",
-      "status": false,
-      "id": 8
-    },
-    {
       "taskName": "here is another task",
       "pokemonAlt": "granbull",
       "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/210.png",
@@ -15,11 +8,18 @@
       "id": 9
     },
     {
-      "taskName": "aaaaaaaaaaaa",
+      "taskName": "and another one",
       "pokemonAlt": "wobbuffet",
       "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/202.png",
       "status": false,
-      "id": 10
+      "id": 12
+    },
+    {
+      "taskName": "test",
+      "pokemonAlt": "",
+      "pokemonSrc": "",
+      "status": false,
+      "id": 13
     }
   ],
   "pokemons": [

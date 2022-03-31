@@ -1,5 +1,4 @@
 import "./styles/App.css";
-import Button from "./components/Button";
 import Form from "./components/Form";
 import Tasks from "./components/Tasks";
 import Header from "./components/Header";
@@ -16,10 +15,6 @@ function App() {
     };
     getTasks();
   }, []);
-
-  // background colors for buttons
-  const red = { backgroundColor: "#E3261A" };
-  const green = { backgroundColor: "#1AE32E" };
 
   // fetch
   const addTask = async (task) => {
@@ -83,6 +78,7 @@ function App() {
         onAdd={() => setShowAddTask(!showAddTask)}
         showAdd={showAddTask}
       />
+      {/* <Form onAdd={addTask} /> */}
       {showAddTask && <Form onAdd={addTask} />}
       {tasks.length > 0 ? (
         <Tasks
