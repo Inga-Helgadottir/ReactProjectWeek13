@@ -11,7 +11,6 @@ function App() {
     <div className="App">
       <Form />
 
-      <h2>Button test</h2>
       <Button name="Add task" color={green} />
       <Button name="Done" color={red}  />
     </div>
