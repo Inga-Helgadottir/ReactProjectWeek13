@@ -1,4 +1,4 @@
-// fetch pokemons - do not run this unless something happens to the db.json
+// fetch pokemons - DO NOT run this unless something happens to the db.json
 
 // const [pokemons, setPokemons] = useState([]);
 
