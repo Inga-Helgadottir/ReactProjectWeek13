@@ -24,9 +24,6 @@ function App() {
     const value = event.target.value;
     setSearch(value);
   };
-  const addTodo = () => {
-    inputRef.focus();
-  };
 
   // const searcTodos = todos.filter((el) =>
   const searcTasks = tasks.filter((el) =>
@@ -97,15 +94,15 @@ function App() {
 
   return (
     <div className="App">
-      <div style={searchStyle}>
-        <FaSistrix id="searchIcon" />
-        <input ref={inputRef} id="task" type="text" onChange={inputTasks} />
-      </div>
       <Header
         onAdd={() => setShowAddTask(!showAddTask)}
         showAdd={showAddTask}
       />
       {showAddTask && <Form onAdd={addTask} />}
+      <div style={searchStyle}>
+        <FaSistrix id="searchIcon" />
+        <input ref={inputRef} id="task" type="text" onChange={inputTasks} />
+      </div>
       {tasks.length > 0 ? (
         <Tasks
           tasks={searcTasks}

@@ -13,6 +13,20 @@
       "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/202.png",
       "status": false,
       "id": 12
+    },
+    {
+      "taskName": "and this one",
+      "pokemonAlt": "dunsparce",
+      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/206.png",
+      "status": false,
+      "id": 13
+    },
+    {
+      "taskName": "hihi",
+      "pokemonAlt": "unown",
+      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/201.png",
+      "status": false,
+      "id": 14
     }
   ],
   "pokemons": [
