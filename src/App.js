@@ -4,6 +4,7 @@ import Tasks from "./components/Tasks";
 import Header from "./components/Header";
 import { useState, useEffect, useRef } from "react";
 import { FaSistrix } from "react-icons/fa";
+import img from "./pokemon.png";
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -18,6 +19,13 @@ function App() {
     };
     getTasks();
   }, []);
+
+  //favicon
+  var link = document.createElement("link");
+  link.type = "image/png";
+  link.rel = "icon";
+  link.href = img;
+  document.getElementsByTagName("head")[0].appendChild(link);
 
   //search
   const inputTasks = (event) => {
