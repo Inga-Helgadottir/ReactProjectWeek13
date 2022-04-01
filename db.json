@@ -27,6 +27,13 @@
       "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/201.png",
       "status": false,
       "id": 14
+    },
+    {
+      "taskName": "muhahaha",
+      "pokemonAlt": "snubbull",
+      "pokemonSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/209.png",
+      "status": true,
+      "id": 15
     }
   ],
   "pokemons": [
